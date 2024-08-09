@@ -1,499 +1,1254 @@
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ЛенРеактив</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <!--[if (gte mso 9)|(IE)]>
-    <style type="text/css">
-        table {border-collapse: collapse;}
-    </style>
-    <![endif]-->
-    <style type="text/css">
-        /* Basics */
-body {
-    Margin: 0;
-    padding: 0;
-    min-width: 100%;
-    background-color: #ffffff;
-}
-table {
-    border-spacing: 0;
-    font-family: sans-serif;
-    color: #333333;
-}
-td {
-    padding: 0;
-}
-img {
-    border: 0;
-}
-.wrapper {
-    width: 100%;
-    table-layout: fixed;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
-.webkit {
-    max-width: 600px;
-}
-.outer {
-    Margin: 0 auto;
-    width: 100%;
-    max-width: 600px;
-}
-.full-width-image img {
-    width: 100%;
-    height: auto;
-}
-.inner {
-    padding: 10px;
-}
-p {
-    Margin: 0;
-}
-a {
-    color: #ee6a56;
-    text-decoration: underline;
-}
-.h1 {
-    font-size: 21px;
-    font-weight: bold;
-    Margin-bottom: 18px;
-}
-.h2 {
-    font-size: 18px;
-    font-weight: bold;
-    Margin-bottom: 12px;
-}
- 
-/* One column layout */
-.one-column .contents {
-    text-align: left;
-}
-.one-column p {
-    font-size: 14px;
-    Margin-bottom: 10px;
-}
+    <script
+      type="text/javascript"
+      src="chrome-extension://epebfcehmdedogndhlcacafjaacknbcm/nmcades_plugin_api.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="chrome-extension://epebfcehmdedogndhlcacafjaacknbcm/nmcades_plugin_api.js"
+    ></script>
+  </head>
 
-/*Two column layout*/
-.two-column {
-    text-align: center;
-    font-size: 0;
-}
-.two-column .column {
-    width: 100%;
-    max-width: 300px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.contents {
-    width: 100%;
-}
-.two-column .contents {
-    font-size: 14px;
-    text-align: left;
-}
-.two-column img {
-    width: 100%;
-    height: auto;
-}
-.two-column .text {
-    padding-top: 10px;
-}
-
-/*Three column layout*/
-.three-column {
-    text-align: center;
-    font-size: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.three-column .column {
-    width: 100%;
-    max-width: 200px;
-    display: inline-block;
-    vertical-align: top;
-}
-.three-column .contents {
-    font-size: 14px;
-    text-align: center;
-}
-.three-column img {
-    width: 100%;
-    height: auto;
-}
-.three-column .text {
-    padding-top: 10px;
-}
-
-/* Left sidebar layout */
-.left-sidebar {
-    text-align: center;
-    font-size: 0;
-}
-.left-sidebar .column {
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-}
-.left-sidebar .left {
-    max-width: 100px;
-}
-.left-sidebar .right {
-    max-width: 500px;
-}
-.left-sidebar .contents {
-    font-size: 14px;
-    text-align: center;
-}
-.left-sidebar a {
-    color: #85ab70;
-}
-
-/* Right sidebar layout */
-.right-sidebar {
-    text-align: center;
-    font-size: 0;
-}
-.right-sidebar .column {
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-}
-.right-sidebar .left {
-    max-width: 100px;
-}
-.right-sidebar .right {
-    max-width: 500px;
-}
-.right-sidebar .contents {
-    font-size: 14px;
-    text-align: center;
-}
-.right-sidebar a {
-    color: #70bbd9;
-}
-
-/*Media Queries*/
-@media screen and (max-width: 400px) {
-    .two-column .column,
-    .three-column .column {
-        max-width: 100% !important;
-    }
-    .three-column img {
-        max-width: 50% !important;
-    }
-}
-@media screen and (min-width: 401px) and (max-width: 620px) {
-    .three-column .column {
-        max-width: 33% !important;
-    }
-    .two-column .column {
-        max-width: 50% !important;
-    }
-}
-/* Windows Phone Viewport Fix */
-@-ms-viewport { 
-    width: device-width; 
-}
-    </style>
-</head>
-<body>
-    <center class="wrapper">
-        <div class="webkit">
-            <!--[if (gte mso 9)|(IE)]>
-<table width="600" align="center">
-<tr>
-<td>
-<![endif]-->
-<table class="outer" cellpadding="0" cellspacing="0" border="0" align="center">
-    <tr>
-        <td class="full-width-image">
-            <img src="images/header.jpg" alt="" />
-        </td>
-    </tr>
-    <tr>
-        <td class="one-column">
-            <table width="100%">
-                <tr>
-                    <td class="inner contents">
-                        <p class="h1">Lorem ipsum dolor sit amet</p>
-                        <p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+  <body
+    style="
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      background-color: #e5e5e5;
+      margin: 0;
+      min-width: 100%;
+      padding: 0;
+      width: 100%;
+    "
+  >
+    <center style="min-width: 100%; width: 100%">
+      <table
+        style="
+          width: 600px;
+          background-color: #f8f8f8;
+          font-family: Arial, sans-serif;
+          margin: 0 auto;
+          border-spacing: 0;
+        "
+        rules="none"
+        cellspacing="0"
+        cellpadding="0"
+        border="0"
+      >
+        <tbody>
+          <tr>
+            <td>
+              <table
+                style="
+                  width: 600px;
+                  background-color: #f1f1f1;
+                  font-family: Arial, sans-serif;
+                  margin: 0 auto;
+                  border-spacing: 0;
+                "
+                rules="none"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+              >
+                <tbody>
+                  <tr>
+                    <td colspan="4" height="17"></td>
+                  </tr>
+                  <tr>
+                    <td width="20"></td>
+                    <td>
+                      <a
+                        href="https://lenreactiv.ru/?utm_source=Unisender&amp;utm_medium=email&amp;utm_campaign=Рассылка_24_07_24"
+                        target="_blank"
+                      >
+                        <img
+                          src="images2/logo.png"
+                          alt="АО «ЛенРеактив»"
+                          style="width: 203px; height: 42px; display: block"
+                          width="203"
+                          height="42"
+                        />
+                      </a>
                     </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-    <tr>
-        <td class="two-column">
-            <!--[if (gte mso 9)|(IE)]>
-            <table width="100%">
-            <tr>
-            <td width="50%" valign="top">
-            <![endif]-->
-            <div class="column">
-                <table width="100%">
-                    <tr>
-                        <td class="inner">
-                            <table class="contents">
-                                <tr>
+                    <td align="right">
+                      <a
+                        href="tel:+78003334092"
+                        style="
+                          font-size: 14px;
+                          line-height: 16.1px;
+                          text-decoration: none;
+                          font-family: Arial, sans-serif;
+                          color: #21201e;
+                          font-weight: 700;
+                        "
+                        >8 (800) 333-40-92</a
+                      >
+                      <br />
+                      <a
+                        href="mailto:info@lenreactiv.ru?subject= Запрос гигрометров"
+                        style="
+                          font-size: 14px;
+                          line-height: 16.1px;
+                          text-decoration: underline;
+                          font-family: Arial, sans-serif;
+                          color: #21201e;
+                          font-weight: 700;
+                        "
+                        >info@lenreactiv.ru</a
+                      >
+                    </td>
+                    <td width="20"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" height="17"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <table
+                style="
+                  width: 600px;
+                  background-color: #f8f8f8;
+                  font-family: Arial, sans-serif;
+                  margin: 0 auto;
+                  border-spacing: 0;
+                "
+                rules="none"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+              >
+                <tbody>
+                  <tr>
+                    <td colspan="3" height="36"></td>
+                  </tr>
+                  <tr>
+                    <td width="20"></td>
+                    <td>
+                      <span
+                        style="
+                          font-size: 22px;
+                          line-height: 25.3px;
+                          color: #21201e;
+                          font-family: Arial, sans-serif;
+                          font-weight: 700;
+                          display: block;
+                        "
+                        >Уважаемый Партнер!</span
+                      >
+                    </td>
+                    <td width="20"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" height="20"></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <span
+                        style="
+                          font-size: 14px;
+                          line-height: 18.2px;
+                          color: #21201e;
+                          font-family: Arial, sans-serif;
+                          display: block;
+                        "
+                      >
+                        Не пропустите последние новости химии: наука, технологии
+                        и производство.</span
+                      >
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" height="30"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <!-- Сетка начало-->
+          <!--  левый -->
+          <tr>
+            <td>
+              <table
+                style="
+                  width: 600px;
+                  background-color: #f1f1f1;
+                  font-family: Arial, sans-serif;
+                  margin: 0 auto;
+                  border-spacing: 0;
+                "
+                rules="none"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+              >
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <hr
+                        style="
+                          margin: 0;
+                          background-color: #e0e0e0;
+                          height: 1px;
+                          border: none;
+                        "
+                      />
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td width="20"></td>
+                    <td>
+                      <table
+                        style="
+                          width: 560px;
+                          background-color: #f1f1f1;
+                          font-family: Arial, sans-serif;
+                          margin: 0 auto;
+                          border-spacing: 0;
+                        "
+                        rules="none"
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                      >
+                        <tbody>
+                          <tr height="30"></tr>
+                          <tr>
+                            <td valign="top" style="vertical-align: top">
+                              <!-- текст -->
+                              <table
+                                style="
+                                  width: 269px;
+                                  background-color: #f1f1f1;
+                                  font-family: Arial, sans-serif;
+                                  margin: 0 auto;
+                                  border-spacing: 0;
+                                "
+                                rules="none"
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                              >
+                                <tbody>
+                                  <tr>
                                     <td>
-                                        <img src="images/two-column-01.jpg" alt="" />
+                                      <span
+                                        style="
+                                          font-size: 14px;
+                                          line-height: 19.6px;
+                                          color: #21201e;
+                                          font-weight: 700;
+                                          font-family: Arial, sans-serif;
+                                          display: block;
+                                        "
+                                      >
+                                        Пиролизная жидкость из стоков
+                                      </span>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td class="text">
-                                        Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <!--[if (gte mso 9)|(IE)]>
-            </td><td width="50%" valign="top">
-            <![endif]-->
-            <div class="column">
-                <table width="100%">
-                    <tr>
-                        <td class="inner">
-                            <table class="contents">
-                                <tr>
+                                  </tr>
+                                  <tr height="12"></tr>
+                                  <tr>
                                     <td>
-                                        <img src="images/two-column-01.jpg" alt="" />
+                                      <span
+                                        style="
+                                          font-size: 12px;
+                                          line-height: 16.8px;
+                                          color: #21201e;
+                                          font-family: Arial, sans-serif;
+                                          display: block;
+                                        "
+                                      >
+                                        По некоторым оценкам ежегодно в мире
+                                        муниципальные очистные сооружения
+                                        производят 100 млн. тонн иловых осадков,
+                                        которые образуются после очистки сточных
+                                        вод. Один из вариантов их утилизации —
+                                        быстрый нагрев без доступа кислорода, в
+                                        результате которого образуется
+                                        пиролизная жидкость. Из нее надо удалить
+                                        азот и кислород, чтобы приблизить состав
+                                        к нефти.
+                                      </span>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td class="text">
-                                        Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                                  </tr>
+                                  <tr height="12"></tr>
+                                  <tr>
+                                    <td>
+                                      <a
+                                        href="#"
+                                        target="_blank"
+                                        style="
+                                          color: #f47820;
+                                          text-decoration: underline;
+                                        "
+                                        >Читать дальше</a
+                                      >
                                     </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <!--[if (gte mso 9)|(IE)]>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <td width="15"></td>
+                            <td>
+                              <img
+                                src="/images/Rectangle8.png"
+                                alt="стоки из труб"
+                                style="
+                                  width: 276px;
+                                  height: 260px;
+                                  display: block;
+                                "
+                                width="276"
+                                height="260"
+                              />
+                              <!-- картинка -->
+                            </td>
+                          </tr>
+                          <tr height="30"></tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <hr
+                                style="
+                                  margin: 0;
+                                  background-color: #e0e0e0;
+                                  height: 1px;
+                                  border: none;
+                                "
+                              />
+                            </td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    <td width="20"></td>
+                  </tr>
+                </tbody>
+              </table>
             </td>
-            </tr>
-            </table>
-            <![endif]-->
-        </td>
-    </tr>
-    <tr>
-        <td class="three-column">
-            <!--[if (gte mso 9)|(IE)]>
-            <table width="100%">
-            <tr>
-            <td width="200" valign="top">
-            <![endif]-->
-            <table class="column">
-                <tr>
-                    <td class="inner">
-                        <table class="contents">
-                            <tr>
-                                <td>
-                                    <img src="images/three-column-01.jpg" alt="" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text">
-                                    1Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat. 
-                                </td>
-                            </tr>
-                        </table>
-                        
+          </tr>
+
+          <!--  правый -->
+          <tr>
+            <td>
+              <table
+                style="
+                  width: 600px;
+                  background-color: #f1f1f1;
+                  font-family: Arial, sans-serif;
+                  margin: 0 auto;
+                  border-spacing: 0;
+                "
+                rules="none"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+              >
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <hr
+                        style="
+                          margin: 0;
+                          background-color: #e0e0e0;
+                          height: 1px;
+                          border: none;
+                        "
+                      />
                     </td>
-                </tr>
-                
-            </table>
-            <!--[if (gte mso 9)|(IE)]>
-            </td><td width="200" valign="top">
-            <![endif]-->
-            <table class="column">
-                <tr>
-                    <td class="inner">
-                        <table class="contents">
-                            <tr>
-                                <td>
-                                    <img src="images/three-column-01.jpg" alt="" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text">
-                                    2Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat. 
-                                </td>
-                            </tr>
-                        </table>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td width="20"></td>
+                    <td>
+                      <table
+                        style="
+                          width: 560px;
+                          background-color: #f1f1f1;
+                          font-family: Arial, sans-serif;
+                          margin: 0 auto;
+                          border-spacing: 0;
+                        "
+                        rules="none"
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                      >
+                        <tbody>
+                          <tr height="30"></tr>
+                          <tr>
+                            <!-- картинка -->
+                            <td>
+                              <img
+                                src="/images/Rectangle8_(1).png"
+                                alt="графовая нейросеть GNoME"
+                                style="
+                                  width: 276px;
+                                  height: 260px;
+                                  display: block;
+                                "
+                                width="276"
+                                height="260"
+                              />
+                            </td>
+                            <td width="15"></td>
+                            <!-- текст -->
+                            <td valign="top" style="vertical-align: top">
+                              <table
+                                style="
+                                  width: 269px;
+                                  background-color: #f1f1f1;
+                                  font-family: Arial, sans-serif;
+                                  margin: 0 auto;
+                                  border-spacing: 0;
+                                "
+                                rules="none"
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <span
+                                        style="
+                                          font-size: 14px;
+                                          line-height: 19.6px;
+                                          color: #21201e;
+                                          font-weight: 700;
+                                          font-family: Arial, sans-serif;
+                                          display: block;
+                                        "
+                                      >
+                                        Методы машинного обучения для открытия
+                                        материалов
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr height="12"></tr>
+                                  <tr>
+                                    <td>
+                                      <span
+                                        style="
+                                          font-size: 12px;
+                                          line-height: 16.8px;
+                                          color: #21201e;
+                                          font-family: Arial, sans-serif;
+                                          display: block;
+                                        "
+                                      >
+                                        Вслед за AlphaFold2 DeepMind представила
+                                        графовую нейросеть GNoME (graph networks
+                                        for materials exploration) для
+                                        предсказания кристаллических структуры
+                                        материалов и их стабильности.<br />
+                                        Всего было найдено 2.2 млн новых
+                                        материалов, 380к из которых предсказаны
+                                        как стабильные.
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr height="12"></tr>
+                                  <tr>
+                                    <td>
+                                      <a
+                                        href="#"
+                                        target="_blank"
+                                        style="
+                                          color: #f47820;
+                                          text-decoration: underline;
+                                        "
+                                        >Читать дальше</a
+                                      >
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr height="30"></tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <hr
+                                style="
+                                  margin: 0;
+                                  background-color: #e0e0e0;
+                                  height: 1px;
+                                  border: none;
+                                "
+                              />
+                            </td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </td>
-                </tr>
-            </table>
-            <!--[if (gte mso 9)|(IE)]>
-            </td><td width="200" valign="top">
-            <![endif]-->
-            <table class="column">
-                <tr>
-                    <td class="inner">
-                        <table class="contents">
-                            <tr>
-                                <td>
-                                    <img src="images/three-column-01.jpg" alt="" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text">
-                                    3Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat. 
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-                        
-            <!--[if (gte mso 9)|(IE)]>
+                    <td width="20"></td>
+                  </tr>
+                </tbody>
+              </table>
             </td>
-            </tr>
-            </table>
-            <![endif]-->
-        </td>
-    </tr>
-    <tr>
-        <td class="three-column">
-            <!--[if (gte mso 9)|(IE)]>
-            <table width="100%">
-            <tr>
-            <td width="200" valign="top">
-            <![endif]-->
-            [column to go here]
-            <!--[if (gte mso 9)|(IE)]>
-            </td><td width="200" valign="top">
-            <![endif]-->
-            [column to go here]
-            <!--[if (gte mso 9)|(IE)]>
-            </td><td width="200" valign="top">
-            <![endif]-->
-            [column to go here]
-            <!--[if (gte mso 9)|(IE)]>
+          </tr>
+          <!--  левый -->
+          <tr>
+            <td>
+              <table
+                style="
+                  width: 600px;
+                  background-color: #f1f1f1;
+                  font-family: Arial, sans-serif;
+                  margin: 0 auto;
+                  border-spacing: 0;
+                "
+                rules="none"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+              >
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <hr
+                        style="
+                          margin: 0;
+                          background-color: #e0e0e0;
+                          height: 1px;
+                          border: none;
+                        "
+                      />
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td width="20"></td>
+                    <td>
+                      <table
+                        style="
+                          width: 560px;
+                          background-color: #f1f1f1;
+                          font-family: Arial, sans-serif;
+                          margin: 0 auto;
+                          border-spacing: 0;
+                        "
+                        rules="none"
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                      >
+                        <tbody>
+                          <tr height="30"></tr>
+                          <tr>
+                            <td valign="top" style="vertical-align: top">
+                              <!-- текст -->
+                              <table
+                                style="
+                                  width: 269px;
+                                  background-color: #f1f1f1;
+                                  font-family: Arial, sans-serif;
+                                  margin: 0 auto;
+                                  border-spacing: 0;
+                                "
+                                rules="none"
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <span
+                                        style="
+                                          font-size: 14px;
+                                          line-height: 19.6px;
+                                          color: #21201e;
+                                          font-weight: 700;
+                                          font-family: Arial, sans-serif;
+                                          display: block;
+                                        "
+                                      >
+                                        Ученые заставили палладий светиться
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr height="12"></tr>
+                                  <tr>
+                                    <td>
+                                      <span
+                                        style="
+                                          font-size: 12px;
+                                          line-height: 16.8px;
+                                          color: #21201e;
+                                          font-family: Arial, sans-serif;
+                                          display: block;
+                                        "
+                                      >
+                                        Химики разработали подход, позволяющий
+                                        создавать новые светоизлучающие
+                                        материалы на основе органических
+                                        соединений палладия. Открытие в
+                                        перспективе может стать основой для
+                                        светодиодов нового поколения, которые
+                                        будут использованы при создании дисплеев
+                                        в смартфонах, мониторов, а также
+                                        приборов ночного видения. Результаты
+                                        исследования, поддержанного грантом
+                                        Президентской программы Российского
+                                        научного фонда (РНФ), опубликованы в
+                                        журнале Inorganic Chemistry.
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr height="12"></tr>
+                                  <tr>
+                                    <td>
+                                      <a
+                                        href="#"
+                                        target="_blank"
+                                        style="
+                                          color: #f47820;
+                                          text-decoration: underline;
+                                        "
+                                        >Читать дальше</a
+                                      >
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <td width="15"></td>
+                            <td>
+                              <img
+                                src="/images/Rectangle8_(2).png"
+                                alt=" органические соединения палладия"
+                                style="
+                                  width: 276px;
+                                  height: 260px;
+                                  display: block;
+                                "
+                                width="276"
+                                height="260"
+                              />
+                              <!-- картинка -->
+                            </td>
+                          </tr>
+                          <tr height="30"></tr>
+                          <tr>
+                            <td></td>
+                            <td>
+                              <hr
+                                style="
+                                  margin: 0;
+                                  background-color: #e0e0e0;
+                                  height: 1px;
+                                  border: none;
+                                "
+                              />
+                            </td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    <td width="20"></td>
+                  </tr>
+                </tbody>
+              </table>
             </td>
-            </tr>
-            <tr>
-            <td width="200" valign="top">
-            <![endif]-->
-            <table class="column">
-                <tr>
-                    <td class="inner contents">
-                        <p class="h2">Heading</p>
-                        <p>Class eleifend aptent taciti sociosqu ad litora torquent conubia</p>
-                        <p><a href="#">Read more</a></p>
+          </tr>
+
+          <!--  правый -->
+          <tr>
+            <td>
+              <table
+                style="
+                  width: 600px;
+                  background-color: #f1f1f1;
+                  font-family: Arial, sans-serif;
+                  margin: 0 auto;
+                  border-spacing: 0;
+                "
+                rules="none"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+              >
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <hr
+                        style="
+                          margin: 0;
+                          background-color: #e0e0e0;
+                          height: 1px;
+                          border: none;
+                        "
+                      />
                     </td>
-                </tr>
-            </table>
-            <!--[if (gte mso 9)|(IE)]>
-            </td><td width="200" valign="top">
-            <![endif]-->
-            <table class="column">
-                <tr>
-                    <td class="inner contents">
-                        <p class="h2">Heading</p>
-                        <p>Class eleifend aptent taciti sociosqu ad litora torquent conubia</p>
-                        <p><a href="#">Read more</a></p>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td width="20"></td>
+                    <td>
+                      <table
+                        style="
+                          width: 560px;
+                          background-color: #f1f1f1;
+                          font-family: Arial, sans-serif;
+                          margin: 0 auto;
+                          border-spacing: 0;
+                        "
+                        rules="none"
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                      >
+                        <tbody>
+                          <tr height="30"></tr>
+                          <tr>
+                            <!-- картинка -->
+                            <td>
+                              <img
+                                src="/images/Rectangle8_(3).png"
+                                alt="травянистое растение мискантус гигантский"
+                                style="
+                                  width: 276px;
+                                  height: 260px;
+                                  display: block;
+                                "
+                                width="276"
+                                height="260"
+                              />
+                            </td>
+                            <td width="15"></td>
+                            <!-- текст -->
+                            <td valign="top" style="vertical-align: top">
+                              <table
+                                style="
+                                  width: 269px;
+                                  background-color: #f1f1f1;
+                                  font-family: Arial, sans-serif;
+                                  margin: 0 auto;
+                                  border-spacing: 0;
+                                "
+                                rules="none"
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <span
+                                        style="
+                                          font-size: 14px;
+                                          line-height: 19.6px;
+                                          color: #21201e;
+                                          font-weight: 700;
+                                          font-family: Arial, sans-serif;
+                                          display: block;
+                                        "
+                                      >
+                                        Ученые получили сразу два востребованных
+                                        полимера из мискантуса гигантского
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr height="12"></tr>
+                                  <tr>
+                                    <td>
+                                      <span
+                                        style="
+                                          font-size: 12px;
+                                          line-height: 16.8px;
+                                          color: #21201e;
+                                          font-family: Arial, sans-serif;
+                                          display: block;
+                                        "
+                                      >
+                                        Ученые выяснили, что из травянистого
+                                        растения мискантуса гигантского можно
+                                        получить сразу два типа полимеров —
+                                        нитраты целлюлозы и бактериальную
+                                        целлюлозу. В первом случае выделенную из
+                                        растительного сырья клетчатку нужно
+                                        обработать смесью серной и азотной
+                                        кислот, а во втором — расщепить до
+                                        глюкозы и добавить к ней микроорганизмы.
+                                      </span>
+                                    </td>
+                                  </tr>
+                                  <tr height="12"></tr>
+                                  <tr>
+                                    <td>
+                                      <a
+                                        href="#"
+                                        target="_blank"
+                                        style="
+                                          color: #f47820;
+                                          text-decoration: underline;
+                                        "
+                                        >Читать дальше</a
+                                      >
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr height="30"></tr>
+                        </tbody>
+                      </table>
                     </td>
-                </tr>
-            </table>
-            <!--[if (gte mso 9)|(IE)]>
-            </td><td width="200" valign="top">
-            <![endif]-->
-            <table class="column">
-                <tr>
-                    <td class="inner contents">
-                        <p class="h2">Heading</p>
-                        <p>Class eleifend aptent taciti sociosqu ad litora torquent conubia</p>
-                        <p><a href="#">Read more</a></p>
-                    </td>
-                </tr>
-            </table>
-            <!--[if (gte mso 9)|(IE)]>
+                    <td width="20"></td>
+                  </tr>
+                </tbody>
+              </table>
             </td>
-            </tr>
-            </table>
-            <![endif]-->
-        </td>
-    </tr>
-    <tr>
-        <td class="left-sidebar">
-            <!--[if (gte mso 9)|(IE)]>
-            <table width="100%">
-            <tr>
-            <td width="100">
-            <![endif]-->
-            <table class="column left">
-                <tr>
-                    <td class="inner">
-                        <img src="images/sidebar-01.jpg" width="80" height="80" alt="" />
+          </tr>
+
+          <tr>
+            <td>
+              <table
+                style="
+                  width: 600px;
+                  background-color: #f1f1f1;
+                  font-family: Arial, sans-serif;
+                  margin: 0 auto;
+                  border-spacing: 0;
+                "
+                rules="none"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+              >
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <hr
+                        style="
+                          margin: 0;
+                          background-color: #e0e0e0;
+                          height: 1px;
+                          border: none;
+                        "
+                      />
                     </td>
-                </tr>
-            </table>
-            <!--[if (gte mso 9)|(IE)]>
-            </td><td width="500">
-            <![endif]-->
-            <table class="column right">
-                <tr>
-                    <td class="inner contents">
-                        Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat. <a href="#">Read on</a>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td height="30"></td>
+                  </tr>
+                  <tr>
+                    <td width="20"></td>
+                    <td>
+                      <table
+                        style="
+                          width: 560px;
+                          background-color: #f1f1f1;
+                          font-family: Arial, sans-serif;
+                          margin: 0 auto;
+                          border-spacing: 0;
+                        "
+                        rules="none"
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                      >
+                        <tr>
+                          <td>
+                            <span
+                              style="
+                                font-size: 14px;
+                                line-height: 19.6px;
+                                color: #21201e;
+                                font-family: Arial, sans-serif;
+                                font-weight: 700;
+                                display: block;
+                              "
+                              >Новые поступления на склад «ЛенРеактива»</span
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="12"></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span
+                              style="
+                                font-size: 14px;
+                                line-height: 19.6px;
+                                color: #21201e;
+                                font-family: Arial, sans-serif;
+                                font-weight: 400;
+                                display: block;
+                              "
+                            >
+                              Сода кальцинированная, марка Б
+                            </span>
+                          </td>
+                          <!-- кнопка -->
+
+                          <td width="106" ;height="33" ;>
+                            <a
+                              href="#"
+                              style="
+                                background-color: #f47820;
+                                border-radius: 79px;
+                                color: #ffffff;
+                                display: inline-block;
+                                font-family: sans-serif;
+                                font-size: 13px;
+                                font-weight: bold;
+                                line-height: 33px;
+                                text-align: center;
+                                text-decoration: none;
+                                width: 106px;
+                                height: 33px;
+                                -webkit-text-size-adjust: none;
+                              "
+                            >
+                              <span
+                                style="
+                                  font-size: 12px;
+                                  line-height: 33px;
+                                  color: #ffffff;
+                                  font-family: Arial, sans-serif;
+                                  font-weight: 700;
+                                  display: block;
+                                "
+                                >Перейти</span
+                              >
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="12"></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <span
+                              style="
+                                font-size: 14px;
+                                line-height: 19.6px;
+                                color: #21201e;
+                                font-family: Arial, sans-serif;
+                                font-weight: 400;
+                                display: block;
+                              "
+                            >
+                              Натрий серноватистокислый фотографический
+                            </span>
+                          </td>
+                          <!-- кнопка -->
+
+                          <td width="106" ;height="33" ;>
+                            <a
+                              href="#"
+                              style="
+                                background-color: #f47820;
+                                border-radius: 79px;
+                                color: #ffffff;
+                                display: inline-block;
+                                font-family: sans-serif;
+                                font-size: 13px;
+                                font-weight: bold;
+                                line-height: 33px;
+                                text-align: center;
+                                text-decoration: none;
+                                width: 106px;
+                                height: 33px;
+                                -webkit-text-size-adjust: none;
+                              "
+                            >
+                              <span
+                                style="
+                                  font-size: 12px;
+                                  line-height: 33px;
+                                  color: #ffffff;
+                                  font-family: Arial, sans-serif;
+                                  font-weight: 700;
+                                  display: block;
+                                "
+                                >Перейти</span
+                              >
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
-                </tr>
-            </table>
-            <!--[if (gte mso 9)|(IE)]>
+                    <td width="20"></td>
+                  </tr>
+                </tbody>
+              </table>
             </td>
-            </tr>
-            </table>
-            <![endif]-->
-        </td>
-    </tr>
-    <tr>
-        <td class="right-sidebar" dir="rtl">
-            <!--[if (gte mso 9)|(IE)]>
-            <table width="100%" dir="rtl">
-            <tr>
-            <td width="100">
-            <![endif]-->
-            <table class="column left" dir="ltr">
-                <tr>
-                    <td class="inner contents">
-                        <img src="images/sidebar-02.jpg" width="80" height="80" alt="" />
+          </tr>
+
+          <!-- Сетка конец-->
+
+          <tr>
+            <td>
+              <table
+                style="
+                  width: 600px;
+                  background-color: #f1f1f1;
+                  font-family: Arial, sans-serif;
+                  margin: 0 auto;
+                  border-spacing: 0;
+                "
+                rules="none"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+              >
+                <tbody>
+                  <tr>
+                    <td colspan="3" height="30"></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <hr
+                        style="
+                          margin: 0;
+                          background-color: #e0e0e0;
+                          height: 1px;
+                          border: none;
+                        "
+                      />
                     </td>
-                </tr>
-            </table>
-            <!--[if (gte mso 9)|(IE)]>
-            </td><td width="500">
-            <![endif]-->
-            <table class="column right" dir="ltr">
-                <tr>
-                    <td class="inner contents">
-                        Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra. <a href="#">Per inceptos</a>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="3" height="30"></td>
+                  </tr>
+
+                  <tr>
+                    <td colspan="3" height="6"></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td align="center">
+                      <span
+                        style="
+                          font-size: 14px;
+                          line-height: 19.6px;
+                          color: #21201e;
+                          font-family: Arial, sans-serif;
+                          display: block;
+                        "
+                      >
+                        Обеспечьте своё производство всем необходимым!<br />
+                        Более 10 000 позиций химической продукции в наличии.
+                      </span>
                     </td>
-                </tr>
-            </table>
-            <!--[if (gte mso 9)|(IE)]>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" height="20"></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td align="center">
+                      <span
+                        style="
+                          font-size: 16px;
+                          line-height: 18.4px;
+                          color: #21201e;
+                          font-family: Arial, sans-serif;
+                          font-weight: 700;
+                          display: block;
+                        "
+                      >
+                         Свяжитесь с менеджером прямо сейчас:
+                      </span>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" height="16"></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td align="center">
+                      <span
+                        style="
+                          font-size: 26px;
+                          line-height: 29.9px;
+                          color: #f47820;
+                          font-family: Arial, sans-serif;
+                          font-weight: 700;
+                        "
+                      >
+                        <a
+                          href="tel:+78003334092"
+                          target="_blank"
+                          style="color: #f47820; text-decoration: underline"
+                          >8 (800) 333-40-92</a
+                        >
+                      </span>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" height="30"></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <hr
+                        style="
+                          margin: 0;
+                          background-color: #e0e0e0;
+                          height: 1px;
+                          border: none;
+                        "
+                      />
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" height="20"></td>
+                  </tr>
+                  <tr>
+                    <td width="20"></td>
+                    <td>
+                      <span
+                        style="
+                          font-size: 14px;
+                          line-height: 19.6px;
+                          color: #21201e;
+                          font-family: Arial, sans-serif;
+                        "
+                      >
+                        С уважением,<br />АО «ЛенРеактив»
+                      </span>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" height="20"></td>
+                  </tr>
+                </tbody>
+              </table>
             </td>
-            </tr>
-            </table>
-            <![endif]-->
-        </td>
-    </tr>
-    
-</table>
-<!--[if (gte mso 9)|(IE)]>
-</td>
-</tr>
-</table>
-<![endif]-->
-        </div>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="/images2/816x124_1.png"
+                alt="banner"
+                style="width: 600px; height: 90px; display: block"
+                width="600"
+                height="600"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <table
+                style="
+                  width: 600px;
+                  background-color: #f1f1f1;
+                  font-family: Arial, sans-serif;
+                  margin: 0 auto;
+                  border-spacing: 0;
+                "
+                rules="none"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+              >
+                <tbody>
+                  <tr>
+                    <td height="12" colspan="4"></td>
+                  </tr>
+                  <tr>
+                    <td width="20"></td>
+                    <td valign="top">
+                      <span
+                        style="
+                          font-size: 14px;
+                          line-height: 19.6px;
+                          color: #21201e;
+                          font-family: Arial, sans-serif;
+                          font-weight: 700;
+                          display: block;
+                          text-decoration: underline;
+                        "
+                      >
+                        <a
+                          href="https://lenreactiv.ru/?utm_source=Unisender&amp;utm_medium=email&amp;utm_campaign=Рассылка_24_07_24"
+                          target="_blank"
+                          style="color: #21201e"
+                          >lenreactiv.ru</a
+                        >
+                      </span>
+                    </td>
+                    <td align="right">
+                      <span
+                        style="
+                          font-size: 12px;
+                          line-height: 16.8px;
+                          color: #21201e;
+                          font-family: Arial, sans-serif;
+                        "
+                      >
+                        196240 Санкт-Петербург, 6-й Предпортовый проезд, 8
+                        лит.Ж.<br />
+                        <a
+                          href="tel:+78003334092"
+                          target="_blank"
+                          style="color: #21201e; text-decoration: none"
+                          >8 (800) 333-40-92</a
+                        ><br />
+                        <a
+                          style="color: #21201e; text-decoration: none"
+                          href="mailto:info@lenreactiv.ru?subject= Запрос гигрометров"
+                          >info@lenreactiv.ru</a
+                        >
+                      </span>
+                    </td>
+                    <td width="20"></td>
+                  </tr>
+                  <tr>
+                    <td height="12" colspan="4"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </center>
-</body>
+  </body>
+</html>
